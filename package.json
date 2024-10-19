@@ -15,5 +15,14 @@
   "workspaces": [
     "src/EdgeRunners_backend",
     "src/EdgeRunners_frontend"
-  ]
+  ],
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "react-router-dom": "^6.27.0"
+  }
 }
