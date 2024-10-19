@@ -5,7 +5,6 @@ import IncidentList from './components/IncidentList';
 import { Card } from 'react-bootstrap';
 
 
-
 const App = () => {
   return (
     <Router>

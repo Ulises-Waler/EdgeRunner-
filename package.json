@@ -21,6 +21,8 @@
     "@types/express": "^5.0.0"
   },
   "dependencies": {
+    "@bundly/ic-react": "^0.4.3",
+    "@dfinity/auth-client": "^2.1.2",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "react-router-dom": "^6.27.0"

@@ -3,16 +3,19 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import { HeatmapLayer } from 'react-leaflet-heatmap-layer-v3'; 
 import { Card, Container } from 'react-bootstrap';
+import iconRetinaUrl from '../../../../node_modules/leaflet/dist/images/marker-icon-2x.png'
+import iconUrl from       '../../../../node_modules/leaflet/dist/images/marker-icon.png'
+import shadowUrl from     '../../../../node_modules/leaflet/dist/images/marker-shadow.png'
 
-delete L.Icon.Default.prototype._getIconUrl; 
+delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+  iconRetinaUrl: iconRetinaUrl,
+  iconUrl: iconUrl ,
+  shadowUrl: shadowUrl ,
 });
 
 const selectedIncidentIcon = new L.Icon({
-  iconUrl: require('leaflet/dist/images/marker-icon.png'), 
+  iconUrl: iconUrl , 
   iconSize: [40, 60], 
   iconAnchor: [20, 60], 
   popupAnchor: [0, -60], 
